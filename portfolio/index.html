@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 $(document).ready(function() {
   $(window).on('scroll', function() {
-    $('.bio .left, .bio .right, .services, .projects, .contact .form, .contact .leftcontact').each(function() {
+    $('.bio .left, .bio .right, .services, .projects).each(function() {
       let position = $(this).offset().top;
       let scrollPosition = $(window).scrollTop();
 
