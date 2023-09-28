@@ -181,7 +181,8 @@ font-size: 1.2 rem;
     margin-top: -140px;
     margin-left: 190px;
     object-fit: cover; 
-
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .imgCircle .check{
@@ -254,24 +255,24 @@ font-size: 1.2 rem;
 }
 
   
-.bio .left.anime,.projects.anime,.contact .leftcontact.anime {
+.bio .left.anime,.projects.anime{
     opacity: 1;
     transform: translateX(0); /* Move to original position */
     
   }
-.bio .left,.projects,.contact .leftcontact{
+.bio .left,.projects{
     flex-basis: 35%;
     opacity: 0;
     transform: translateX(-100%); /* Start off screen on the left */
     transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
     
 }
-.bio .right.anime,.services.anime,.contact .form.anime {
+.bio .right.anime,.services.anime {
     opacity: 1;
     transform: translateX(0); /* Move to original position */
     
   }
-.bio .right,.services,.contact .form{
+.bio .right,.services{
     
     opacity: 0;
     transform: translateX(100%); /* Start off screen on the left */
@@ -639,7 +640,7 @@ font-size: 50px;
    }
    .bio .left,.contact .form{
     width: 380px !important;
-    
+    margin-bottom: 40px;
     flex-direction: column;
      /* Center vertically */
     
