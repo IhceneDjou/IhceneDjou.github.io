@@ -26,12 +26,14 @@ a{
     position: absolute;
     margin-top: 150px;
     padding-left: 80px;
+    cursor: pointer;
 }
 .next{
     color: #6d57eb69; 
     position: absolute;
     margin-top: 150px;
     margin-left: 1400px;
+    cursor: pointer;
 }
 .head{
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)),url(images/bg1.jpg);
@@ -110,17 +112,17 @@ a{
 }
 
 .center .car{
-    align-items: center;
-    justify-content: center;
+    
+        display: grid;
+        place-items: center;
     margin-top: 70px;
    
 }
 .center .car img{
-    align-items: center;
-    justify-content: center;
+  margin: auto;
     width: 800px;
     height: 390px;
-    padding-left: 400px;
+   
     
 }
 .book
@@ -464,14 +466,16 @@ footer p{
 
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:900px) {
     .navbar .menu{
         display: block !important;
         font-size: 1.5rem;
        
         
     }
-    
+    .head{
+        flex-direction: column;
+    }
     .navbar .logo{
         padding-left: 0px;
     }
@@ -497,17 +501,19 @@ footer p{
    .navbar ul  a{
     color:black !important;
    }
+
+   
    .center .car img{
     
     width: 350px;
     height: 300px;
-    padding-left: 100px;
+    
    
 }
 
 .next{
    
-    margin-left: 400px;
+    margin-left: 390px;
 }
 
 .center h1{
@@ -535,7 +541,7 @@ footer p{
     height: auto;
    }
    .book .left{
-    width: 380px !important;
+    width: 300px !important;
     margin-bottom: 40px;
     flex-direction: column;
      /* Center vertically */
@@ -543,13 +549,18 @@ footer p{
     height: 70vh !important;
     
 }
-
 .book .right{
-font-size: 14px !important;    
-width: 450px !important;
-height: 500px;
-padding-top: 10px;
-margin-bottom: 20px;
+    font-size: 14px !important;    
+   
+    height: 300px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    
+}
+.book .right form{
+   
+
+
 }
 .about{
     margin-top: 950px;
