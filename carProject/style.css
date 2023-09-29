@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-   
 }
 li{
     list-style: none;
@@ -165,7 +164,9 @@ a{
 .book .right{
     flex: 1;
     padding-top: 80px;
-    
+    display: grid;
+    margin: 0 20px;
+    place-items: center;
     
 }
 
